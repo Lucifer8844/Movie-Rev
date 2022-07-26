@@ -22,11 +22,11 @@ public class ReviewId {
 	@Id
 	
 	String ReviewId;
-	String MovieName;
-	String HorrorScore;
-	String DramaScore;
-	String CinematographyScore;
-	String CharacterDevelopmentScore;
+	Integer MovieName;
+	Integer HorrorScore;
+	Integer DramaScore;
+	Integer CinematographyScore;
+	Integer CharacterDevelopmentScore;
 	
 
 }
