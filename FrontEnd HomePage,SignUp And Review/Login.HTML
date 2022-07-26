@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Login&SignUp
+        </title>
+        
+        <link rel="stylesheet" href="Login.css">
+        <!-- javascript CDN Link -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>  
+        <header>
+            <!--Background and Navigation bar-->
+            <div class="bann">
+                <div class="navbar">
+                        <!--<img src="logo.jpg" class="logo">-->
+                    <ul>
+                        <li><a href="Homepage.html">Home</a></li>
+                        <!--<li><a href="Booking.HTML">Booking</a></li>-->
+                        <li><a href="Review.html">Review</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!--Login And Signup Button-->
+                <div class="container">
+                    <div class="form">
+                        <div class="btn">
+                            <button class="signUpBtn">Sign Up</button>
+                            <button class="loginBtn">Login</button>
+                        </div>
+                        <!--Sign up form-->
+                    <form class="signUp" action="" method="get">
+                        <div class="formGroup">
+                          <input type="text" id="userName" placeholder="User Name" autocomplete="off">
+                        </div>
+                        <div class="formGroup">
+                          <input type="email" placeholder="Email ID" name="email" required autocomplete="off">
+                        </div>
+                        <div class="formGroup">
+                          <input type="password" id="password" placeholder="Password of minimum 8 characters"  minlength="8" required autocomplete="off">
+                        </div>
+                        <div class="formGroup">
+                          <input type="password" id="confirmPassword" placeholder="Confirm Password" required autocomplete="off">
+                        </div>
+                        <div class="checkBox">
+                          <input type="checkbox" name="checkbox" id="checkbox">
+                          <span class="text">I agree with term & conditions</span>
+                        </div>
+                        <div class="formGroup">
+                          <button type="button" class="btn2">REGISTER</button>
+                        </div>
+                    </form>
+                    <!--Login Form-->
+                    <form class="login" action="" method="get">
+                        <div class="formGroup">
+                          <input type="email" placeholder="Email ID" name="email" required autocomplete="off">
+                        </div>
+                        <div class="formGroup">
+                          <input type="password" id="password" placeholder="Password" required autocomplete="off">
+                        </div>
+                        <div class="checkBox">
+                          <input type="checkbox" name="checkbox" id="checkbox">
+                          <span class="text">Keep me signed in on this device</span>
+                        </div>
+                        <div class="formGroup">
+                          <button type="button" class="btn2">REGISTER</button>
+                        </div>
+                    </form>
+                </div>
+             </div>
+        </header>
+        
+        <footer>
+          <div class="footer">
+              <p><h2 class="foot">Contact Us At</h2></p>
+              <ul>
+                  <h5 class="add">
+                  <li>Email:-Stellervortex@gmail.com</li>
+                  <li>177A Bleecker Street in Manhattan. New York, USA</li>
+                  </h5>
+              </ul>
+          </div>
+      </footer>
+        <!--Adding javaScript file in html-->
+        <script src="hiding.js"></script>
+    </body>
+</html>
