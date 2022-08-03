@@ -145,3 +145,12 @@
  .add{
   text-align: center;
  }
+
+ /*login error*/
+ #email_error,
+ #password_error{
+  
+  color: crimson;
+  text-align: center;
+  display: none;
+ }

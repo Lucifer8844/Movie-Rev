@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="Login.css">
         <!-- javascript CDN Link -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
     </head>
     <body>  
         <header>
@@ -19,7 +20,7 @@
                         <li><a href="Homepage.html">Home</a></li>
                         <!--<li><a href="Booking.HTML">Booking</a></li>-->
                         <li><a href="Review.html">Review</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="About.html">About</a></li>
                         <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
@@ -31,7 +32,7 @@
                             <button class="loginBtn">Login</button>
                         </div>
                         <!--Sign up form-->
-                    <form class="signUp" action="" method="get">
+                    <form class="signUp" action="" method="get" name="form1">
                         <div class="formGroup">
                           <input type="text" id="userName" placeholder="User Name" autocomplete="off">
                         </div>
@@ -53,19 +54,21 @@
                         </div>
                     </form>
                     <!--Login Form-->
-                    <form class="login" action="" method="get">
+                    <form class="login" action="" method="post" name="form2">
                         <div class="formGroup">
                           <input type="email" placeholder="Email ID" name="email" required autocomplete="off">
                         </div>
+                        <div id="email_error">Please Fill Your Email</div>
                         <div class="formGroup">
-                          <input type="password" id="password" placeholder="Password" required autocomplete="off">
+                          <input type="password" id="password" name="password" placeholder="Password" required autocomplete="off">
                         </div>
+                        <div id="password_error">Please Fill Your Password</div>
                         <div class="checkBox">
                           <input type="checkbox" name="checkbox" id="checkbox">
                           <span class="text">Keep me signed in on this device</span>
                         </div>
                         <div class="formGroup">
-                          <button type="button" class="btn2">REGISTER</button>
+                          <button type="submit" class="btn2" onclick="validate()">Login</button>
                         </div>
                     </form>
                 </div>
@@ -84,6 +87,7 @@
           </div>
       </footer>
         <!--Adding javaScript file in html-->
-        <script src="hiding.js"></script>
+        <script src="Loginhiding.js"></script>
+        <script src="LoginValidate.js"></script>
     </body>
 </html>
