@@ -27,7 +27,7 @@ public class UserInfo {
 		//contains the entity of table or the columns of the tables
 		
 		@Id //specifies that it is a primary key
-		@GeneratedValue(strategy = GenerationType.AUTO)//This specifies that the USerId will be generated automatically
+		@GeneratedValue(strategy = GenerationType.IDENTITY)//This specifies that the UserId will be generated automatically
 
 		String UserId;
 		String Username;
