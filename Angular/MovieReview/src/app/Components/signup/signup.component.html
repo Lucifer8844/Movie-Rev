@@ -1,0 +1,41 @@
+ 
+ <div class="container">
+  <div class="form">
+      <div class="btn">
+          <button routerLink="/register" class="signUpBtn">Sign Up</button>
+          <button routerLink="/login" class="loginBtn">Login</button>
+      </div>
+ <!--Sign up form-->
+ 
+  
+    <form class="signUp" (ngSubmit)="register()">
+    <div class="formGroup">
+      
+      <input type="text" id="userName" placeholder="User Name" autocomplete="off" name="username" [(ngModel)]="user.username">
+    </div>
+    <div class="formGroup">
+      <input type="email" placeholder="Email ID" name="email" required autocomplete="off" [(ngModel)]="user.email">
+    </div>
+    <div class="formGroup">
+      <input type="password" id="password" placeholder="Password of minimum 8 characters"  minlength="8" required autocomplete="off" name="password"  [(ngModel)]="user.password">
+    </div>
+    <div class="formGroup">
+      <input type="password" id="confirmPassword" placeholder="Confirm Password" required autocomplete="off" name="cpassword"  [(ngModel)]="data.cpassword">
+    </div>
+    <div class="checkBox">
+      <input type="checkbox" name="checkbox" id="checkbox" value="agree" [(ngModel)]="data.condition">
+      <span class="text">I agree with term & conditions</span>
+    </div>
+    <div class="formGroup">
+      <button type="submit" class="btn2">REGISTER</button>
+    </div>
+
+
+    
+</form>
+<p class="alert-success">{{msg.msg}}</p>
+
+  </div>
+ 
+</div>
+

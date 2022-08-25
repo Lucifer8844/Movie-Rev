@@ -1,0 +1,156 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif
+}
+/* css for navigation bar and background*/
+.bann{
+    width: 100%;
+    height:100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75));
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: #0005;
+    line-height: 50px;
+  }
+.navbar ul{
+    float: right;
+    margin-right: 30px;
+  }
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    transition: 0.7s all;
+    position: relative;
+  }
+  
+.navbar ul li:hover{
+    background-color:crimson;
+  }
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 30px;
+  }
+/*making the form center vertically and horizontally*/
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+.form{
+    width: 350px;
+    height: 450px;
+    background-color: rgba(30,39,39,0.3);
+    box-shadow: 0 5px 30px black;
+}
+/*Styling the button*/
+.btn button{
+    padding: 3px;
+    margin: 30px 0px 40px 30px;
+    border-style: none;
+    background-color: transparent;
+    color: beige;
+    font-size: 18px;
+    font-weight: 550;
+  }
+/*input form group*/
+.formGroup{
+    display: flex;
+    justify-content: center;
+  }
+  .formGroup input{
+    border: none;
+    width: 80%;
+    border-bottom: 2px solid white;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+  }
+  input:focus {
+    outline: none !important;
+    border-bottom: 2px solid rgb(91, 243, 131);
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+  }
+  ::placeholder {
+    color: white;
+  }
+  /* div class checkbox styling*/
+  .checkBox{
+    display: flex;
+    justify-content: center;
+    margin: 16px!important;
+  }
+  /*input  type checkbox styling*/
+  #checkbox{
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+  }
+  /*span tag terms and condition stying*/
+  .text{
+    color: whitesmoke;
+    font-size: 13px;
+  }
+  /*register button styling*/
+  .btn2{
+    padding: 10px;
+    width: 150px;
+    border-radius: 20px;
+    background-color:crimson;
+    border-style: none;
+    color: white;
+    font-weight: 600;
+  }
+  .btn2:hover{
+    background-color:rgba(220,20,60,0.5)
+  }
+  /*top button styling*/
+  .btn button:hover{
+    border-bottom: 2px solid rgb(220,20,60);
+  }
+  /*hiding login page*/
+  .login{
+    display: none;
+  }
+  .login{
+    margin-top: 10px;
+  }   
+.login .checkBox{
+    margin-top: 30px !important;
+  }
+
+  /*footer styling*/
+ .footer{
+  background-color: darkslategrey;
+ }
+ .foot{
+  text-align: center;
+  
+ }
+ .add{
+  text-align: center;
+ }
+
+ /*login error*/
+ #email_error,
+ #password_error{
+  
+  color: crimson;
+  text-align: center;
+  /*display: none;*/
+ }

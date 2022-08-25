@@ -29,10 +29,10 @@ public class UserInfo {
 		@Id //specifies that it is a primary key
 		@GeneratedValue(strategy = GenerationType.IDENTITY)//This specifies that the UserId will be generated automatically
 
-		String UserId;
-		String Username;
-		String Password;
-		String Email;
+		Integer userid;
+		String username;
+		String password;
+		String email;
 		/*
 		@OneToOne(cascade = CascadeType.ALL)
 		@JoinColumn(name = "ReviewId", referencedColumnName = "ReviewId")

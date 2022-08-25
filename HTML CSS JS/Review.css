@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif
+}
+.bann{
+    width: 100%;
+    height:100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("B1.jpg");
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: #0005;
+    line-height: 50px;
+  }
+.navbar ul{
+    float: right;
+    margin-right: 30px;
+  }
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    transition: 0.7s all;
+    position: relative;
+  }
+  
+.navbar ul li:hover{
+    background-color:crimson;
+  }
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 30px;
+  }
+  .cont{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+.form{
+    width: 800px;
+    height: 590px;
+    background-color: rgba(30,39,39,0.3);
+    box-shadow: 0 5px 30px black;
+}
+.Review{
+  margin-top: 10px;
+  font-size: 20px;
+  
+  margin-bottom: 10px;
+}
+.cinematic,.horror,.drama,.character{
+  color: #fff;
+  margin-left: 5px;
+  margin-bottom: 10px ;
+
+}
+/*
+.cinematic:hover,.horror:hover,.drama:hover,.character:hover{
+  color:crimson ;
+  margin-left: 5px;
+  margin-bottom: 10px ;
+
+}*/
+.cine{
+  width: 100%;
+}
+
+.formGroup{
+   margin-top: 10px;
+   margin-bottom: 10px;
+  
+}
+.moviename{
+  color: #fff;
+  width: 80%;
+  height: 3.5vh;
+  border-bottom: 4px solid white;
+  background: transparent;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+#movie{
+  color: #fff;
+  font-size: 20px;
+
+}
+.main{
+  text-align: left;
+  padding-left: 10px;
+
+}
+.textarea{
+  background:transparent;
+  border-radius: 12px;
+  color: #fff;
+  padding:5px
+  
+
+}
+#A1{
+  color:crimson;
+  text-align: center;
+  padding-bottom: 15px;
+
+}
+
+.submit{
+  border-radius: 12px;
+  text-align: center;
+  font-size: 25px;
+  background:transparent;
+  color: crimson;
+  padding: 5px;
+  
+}
+h3{
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+/*footer styling*/
+.footer{
+  background-color: darkslategrey;
+ }
+ .foot{
+  text-align: center;
+  
+ }
+ .add{
+  text-align: center;
+ }

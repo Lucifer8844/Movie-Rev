@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="form">
+      <div class="btn">
+          <button routerLink="/register" class="signUpBtn">Sign Up</button>
+          <button routerLink="/login" class="loginBtn">Login</button>
+      </div>
+<form name="form2"  (ngSubmit)="login()">
+  <div class="formGroup">
+    <input type="text" placeholder="Username" name="username" required autocomplete="off" [(ngModel)]="user.username">
+  </div>
+  <div id="email_error" class="hide">Please Fill Your Email</div>
+  <div class="formGroup">
+    <input type="password" id="password" name="password" placeholder="Password" required autocomplete="off" [(ngModel)]="user.password">
+  </div>
+  <div id="password_error" class="hide">Please Fill Your Password</div>
+  <div class="checkBox">
+    <input type="checkbox" name="checkbox" id="checkbox">
+    <span class="text">Keep me signed in on this device</span>
+  </div>
+  <div class="formGroup">
+    <button type="submit" class="btn2">Login</button>
+  </div>
+</form>
+  </div>
+ 

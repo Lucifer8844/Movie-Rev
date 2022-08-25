@@ -1,0 +1,24 @@
+
+.A1{
+    background-color:rgba(30,39,39,0.3);
+    box-shadow: 0 5px 30px black;
+    width:200px;
+    height:200px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.moviecontainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.btn4{
+    color: #fff;
+    background-color: crimson;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 15px;
+    padding:8px 8px;
+}
