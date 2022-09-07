@@ -1,0 +1,91 @@
+.Review{
+    margin-top: 10px;
+    font-size: 20px;
+    
+    margin-bottom: 10px;
+  }
+  .cinematic,.horror,.drama,.character{
+    color: #fff;
+    margin-left: 5px;
+    margin-bottom: 10px ;
+  
+  }
+  .cine{
+    width: 100px;
+  }
+  
+  .formGroup{
+     margin-top: 10px;
+     margin-bottom: 10px;
+    
+  }
+  .moviename{
+    color: #fff;
+    width: 80%;
+    height: 3.5vh;
+    border-bottom: 4px solid white;
+    background: transparent;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+  }
+  
+  #movie{
+    color: #fff;
+    font-size: 20px;
+  
+  }
+  .main{
+    text-align: left;
+    padding-left: 10px;
+  
+  }
+  /* .textarea{
+    background:transparent;
+    border-radius: 12px;
+    color: #fff;
+    padding:5px;
+    width: 500px;
+    font-size: 15px;
+  
+  } */
+  #A1{
+    color:crimson;
+    text-align: center;
+    padding-bottom: 15px;
+  
+  }
+  
+  .submit{
+    border-radius: 12px;
+    text-align: center;
+    font-size: 25px;
+    /* background:transparent; */
+    background-color: crimson;
+    color:#fff;
+    padding: 5px;
+  
+  }
+  h3{
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .cont{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:90vh;
+}
+.form{
+    width: 800px;
+    height: 600px;
+    background-color: rgba(30,39,39,0.3);
+    box-shadow: 0 5px 30px black;
+    
+}
+select{
+  width: 500px;
+  height:30px;
+}

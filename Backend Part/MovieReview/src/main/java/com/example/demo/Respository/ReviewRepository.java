@@ -8,7 +8,4 @@ import com.example.demo.model.Review;
 public interface ReviewRepository extends JpaRepository<Review,Integer>{
 
 }
-/*
-public interface ReviewRepository extends JpaRepository<ReviewId,String>{
 
-}*/

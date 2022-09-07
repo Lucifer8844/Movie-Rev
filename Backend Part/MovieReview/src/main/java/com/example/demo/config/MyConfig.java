@@ -58,7 +58,7 @@ public class MyConfig extends WebSecurityConfigurerAdapter{
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.authorizeRequests()
-		.antMatchers("/user/register","/user/login","/movies/list").permitAll()
+		.antMatchers("/user/register","/user/login","/movies/list","/review/save").permitAll()
 		.anyRequest().authenticated()
 		.and().formLogin().defaultSuccessUrl("http://localhost:4200/",true).loginPage("http://localhost:4200/login")
 		.and().csrf().disable();

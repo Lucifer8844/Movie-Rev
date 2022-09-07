@@ -1,8 +1,8 @@
 package com.example.demo.Controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.UserDetails;
-//import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -49,9 +49,23 @@ public class UserController {
 	}
 	
 	@PostMapping("/login")
-	public UserDetails login(@RequestBody UserInfo u) {
-		UserDetails ud=us.loadUserByUsername(u.getUsername());
-		return ud;
+	public ResponseEntity<UserInfo> login(@RequestBody UserInfo u) {
+		UserInfo ud=us.loadUser(u.getUsername());
+		
+		String userpsd=u.getPassword();
+		boolean isAuthUser=encode.matches(userpsd, ud.getPassword());
+		
+		if(isAuthUser) {
+			UserInfo data= new UserInfo();
+			data.setUsername(ud.getUsername());
+			data.setUserid(ud.getUserid());
+			
+			return new ResponseEntity<UserInfo>(data,HttpStatus.OK);
+		}
+		
+		
+		
+		return new ResponseEntity<UserInfo>(HttpStatus.NOT_FOUND);
 		
 		
 	}

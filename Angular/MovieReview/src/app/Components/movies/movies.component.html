@@ -1,12 +1,12 @@
 <div class="moviecontainer">
-
+<p>{{msg}}</p>
     <ng-container *ngFor="let data of movies">
     <div class="A1">
         <img src="{{data.imgurl}}" width="200" height="200">
         <label>Movie Name:- {{data.moviename}}</label><br>
         <hr>
         <P>Description:- {{data.description}}</P>
-        <button class="btn4"><a routerLink="/" id="hyper">Rate Now</a></button>
+        <button class="btn4" (click)="movie(data)">Rate Now</button>
     </div>
 </ng-container>
 </div>

@@ -16,5 +16,9 @@ public class MovieService {
 		
 		return mr.findAll();
 	}
+	
+	public Movies getById(int id) {
+		return mr.findById(id).get();
+	}
 
 }

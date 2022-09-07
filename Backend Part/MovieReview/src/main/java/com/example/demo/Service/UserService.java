@@ -43,7 +43,23 @@ public class UserService implements UserDetailsService{
 		
 		return ud;
 	}
+	
+	
+	public UserInfo loadUser(String username) {
+		
+		
+		
+		UserInfo u=ur.findByUsername(username);
+		
+		
+		
+		return u;
+	}
 
+	
+	public UserInfo getById(int id) {
+		return ur.findById(id).get();
+	}
 	
 	
 }

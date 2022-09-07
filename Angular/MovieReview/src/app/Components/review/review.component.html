@@ -1,0 +1,60 @@
+
+<div class="cont">
+    <div class="form">
+        <!--Review form-->
+        <form class="Review" (ngSubmit)="reviewMovie()">
+            <H2 id="A1"><u>Review</u></H2>
+            <div class="main">
+                <div>
+                    
+                    <h3><span id="movie">Movie Name:-</span> <span style="font-size:1.4em;margin-left:10px;color: crimson;"><u>{{movie.moviename}}</u></span></h3>
+                </div>
+                <div class="formGroup">
+                    <label class="cinematic">Cinematography Score</label><br>
+                    <select name="cinematic" class="Cine" [(ngModel)]="review.cinematographyScore">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="formGroup">
+                    <label class="horror">Horror Score</label><br>
+                    <select name="horror" class="horr" [(ngModel)]="review.horrorScore">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="formGroup">
+                    <label class="drama">Drama Score</label><br>
+                    <select name="drama" class="dra" [(ngModel)]="review.dramaScore">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="formGroup">
+                    <label class="character">Character Development Score</label><br>
+                    <select name="charcater" class="char" [(ngModel)]="review.characterDevelopmentScore">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    </select>
+                </div>
+                <!-- <div>
+                    <h3>Please write your precious reviews below</h3>
+                    <textarea class="textarea" name="textarea" rows="10" columns="60"></textarea>
+                </div> -->
+            </div>
+            <button type="submit" class="submit" name="submit" >Submit</button>
+        </form>
+    </div>
+</div>

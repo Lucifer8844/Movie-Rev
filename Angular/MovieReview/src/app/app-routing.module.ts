@@ -4,11 +4,14 @@ import { HomeComponent } from './Components/home/home.component';
 import { LoginComponent } from './Components/login/login.component';
 import { MoviesComponent } from './Components/movies/movies.component';
 import { SignupComponent } from './Components/signup/signup.component';
+import { ReviewComponent } from './Components/review/review.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
 {path:'register',component:SignupComponent,pathMatch:'full'},
 {path:'movies',component:MoviesComponent,pathMatch:'full'},
+{path:'review',component:ReviewComponent,pathMatch:'full'},
+
 {path:'**',component:HomeComponent}
 ];
 
