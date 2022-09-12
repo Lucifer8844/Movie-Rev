@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { MoviesComponent } from './Components/movies/movies.component';
 import { ReviewComponent } from './Components/review/review.component';
+import { AboutComponent } from './Components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ReviewComponent } from './Components/review/review.component';
     HomeComponent,
     SignupComponent,
     MoviesComponent,
-    ReviewComponent
+    ReviewComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

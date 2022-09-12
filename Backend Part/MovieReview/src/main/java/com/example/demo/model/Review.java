@@ -31,7 +31,7 @@ public class Review {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="reviewId")
 	Integer ReviewId;
-	//Integer MovieName;
+	
 	@Column(name="horrorScore")
 	Integer HorrorScore;
 	@Column(name="dramaScore")
@@ -45,14 +45,5 @@ public class Review {
 	private UserInfo userinfo;
 	@OneToOne
 	private Movies movie;
-	
-//	@OneToOne(targetEntity = Movies.class)
-//	Integer MovieId;
-//	@ManyToOne(targetEntity = UserInfo.class)
-//	Integer Userid;
-	/*
-	@OneToOne(cascade = CascadeType.ALL)
-	
-	UserInfo Userinfo;
-*/
-}
+}	
+

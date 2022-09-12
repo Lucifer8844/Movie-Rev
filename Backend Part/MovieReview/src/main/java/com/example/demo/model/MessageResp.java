@@ -21,7 +21,6 @@ public class MessageResp {
 
 	public MessageResp() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	
 	

@@ -43,7 +43,7 @@ public class ReviewController {
 		r.setHorrorScore(m.getHorrorScore());
 		r.setMovie(activeMovie);
 		r.setUserinfo(activeUser);
-		Review data=rs.insert(r);
+		rs.insert(r);
 		return new ResponseEntity<MessageResp>(new MessageResp("Thank you for Rating us."),HttpStatus.OK);
 	
 	}
